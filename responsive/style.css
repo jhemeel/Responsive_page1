@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Oswald:wght@300;400&family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Roboto+Mono:ital@1&family=Roboto+Slab:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif; 
+}
+.main-container{
+    display: flex;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./bg-intro-desktop.png);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    gap:50px
+
+}
+.left{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-left: 10rem;
+    color:  hsl(248, 36%, 96%);
+}
+.left .big{
+font-size: 2rem;
+font-weight: 700;
+padding-bottom: 2rem;
+
+}
+.left .small{
+    font-size: 14px;
+    font-weight: 500;
+}
+.right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 10rem;
+   
+
+}
+.right .paragraph{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    color: hsl(248, 36%, 96%);
+    box-shadow: 2px 0px 10px rgb(73, 71, 71); 
+
+}
+.form-container{
+    background-color:  hsl(248, 36%, 96%);
+    margin-top: 1rem;
+    text-align: center;
+    padding: 1.5rem 0; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(73, 71, 71); ;
+
+}
+input{
+    width: 90%;
+    height: 50px;
+    border: 0.3px solid hsl(246, 25%, 77%);
+    border-radius: 15px;
+    padding: 0 20px;
+  
+
+}
+
+.icon-rtl:active {
+    padding-right: 50px;
+    background: url("./icon-error.svg") no-repeat right;
+    background-size: 20px;
+    cursor: pointer;
+
+
+}
+.icon-rtl{
+    position: relative;
+}
+.icon-rtl::after{
+    content: ;
+}
+
+
+.inp{
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+input:focus{
+    outline: 1pt solid black;
+
+}
+
+
+input[type=submit]{
+    background-color:hsl(154, 59%, 51%);
+    color:  hsl(248, 36%, 96%);
+    border: none;
+}
+.foot{
+    font-size: 10px;
+    color:  hsl(246, 21%, 73%);
+}
+b{
+    color:hsl(0, 100%, 74%);
+}
+
+
+@media screen and (max-width:725px) and  ( min-width: 550px)
+{
+    html{font-size: 10px;
+
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+    max-width: 725px;
+    width:100%;
+    height:100%; 
+    
+}
+
+.left{
+    left-margin: 5px;
+    left-padding:0px;
+
+}
+.right{
+    
+}
+}
+
+@media screen and (max-width: 550px) and (min-width:375px)
+ {
+   *{
+    padding: 0;
+    margin: 0;
+    box-sizing: ;
+   } 
+    
+
+body{
+    font-size: 8px;
+    height: 80vh;
+}
+.main-container{
+display:inline-block
+}
+.left .big{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.right{
+    padding-left: 10px;
+}
+.right{
+    padding-left: 10px;
+}
+.form-container{
+    margin-top: 5px;
+    padding-bottom: -50px;
+}
+input{
+    height: 25px;
+}
+ }
+
+ @media screen and (max-width:375px) {
+    body{
+        background-image: url(./bg-intro-mobile.png);
+        font-size: 8px;
+    }
+    .main-container{
+        display: block;
+
+    }
+    .left{
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+    .left .big{
+        font-size: 30px;
+        padding-bottom: 20px;
+    }
+    .right{
+        padding-left: 20px;
+        padding-right: 20px ;
+    
+ }
+ .right .paragraph{
+    padding: 5px 5px;
+    padding-bottom: 10px;
+
+ }
+ input{
+    height: 25px;
+}
+
+ }
